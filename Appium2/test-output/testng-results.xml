@@ -2,15 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-18T23:53:51 IST" name="Default suite" finished-at="2022-07-18T23:54:17 IST" duration-ms="25956">
+  <suite started-at="2022-07-19T23:35:33 IST" name="Default suite" finished-at="2022-07-19T23:35:48 IST" duration-ms="14974">
     <groups>
     </groups>
-    <test started-at="2022-07-18T23:53:51 IST" name="Default test" finished-at="2022-07-18T23:54:17 IST" duration-ms="25956">
+    <test started-at="2022-07-19T23:35:33 IST" name="Default test" finished-at="2022-07-19T23:35:48 IST" duration-ms="14974">
       <class name="smahuzaifaAppium.AppiumBasics">
-        <test-method signature="AppiumBasics()[pri:0, instance:smahuzaifaAppium.AppiumBasics@1f3f4916]" started-at="2022-07-18T23:53:51 IST" name="AppiumBasics" finished-at="2022-07-18T23:54:17 IST" duration-ms="25900" status="PASS">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.AppiumBasics@769f71a9]" started-at="2022-07-19T23:35:33 IST" name="ConfigureAppium" finished-at="2022-07-19T23:35:43 IST" duration-ms="9774" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AppiumBasics -->
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="WifiSettingName()[pri:0, instance:smahuzaifaAppium.AppiumBasics@769f71a9]" started-at="2022-07-19T23:35:43 IST" name="WifiSettingName" finished-at="2022-07-19T23:35:48 IST" duration-ms="4697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WifiSettingName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.AppiumBasics@769f71a9]" started-at="2022-07-19T23:35:48 IST" name="tearDown" finished-at="2022-07-19T23:35:48 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- smahuzaifaAppium.AppiumBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
