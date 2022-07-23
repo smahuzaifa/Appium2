@@ -4,6 +4,8 @@ package smahuzaifaAppium;
 import java.net.MalformedURLException;
 //import java.net.URL;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 //import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
@@ -22,8 +24,21 @@ public class AppiumBasics extends BaseTest {
 		//Since @BeforeClass is mentioned in the parent class we do not have to call the method
 			//as TestNG will automatically run BeforeClass method first
 		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+		/*
+		 * AppiumBy should be used for accessibility id and androiUIAutomator
+		 */
 		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='3. Preference dependencies']")).click();
-		Thread.sleep(2000);
+		driver.findElement(AppiumBy.id("android:id/checkbox")).click();
+		driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
+		String alerttitle= driver.findElement(By.id("android:id/alertTitle")).getText();
+		System.out.println(alerttitle);
+		Assert.assertEquals(alerttitle, "WiFi settings");
+		//This code will compare app that has got from app and the actual
+		driver.findElement(By.id("android:id/edit")).sendKeys("ABCD");
+		//driver.findElement(By.id("android:id/button1")).click();
+		driver.findElements(AppiumBy.className("android.widget.Button")).get(1).click(); 
+		Thread.sleep(4000);
+		//Can be used when only class name is present and multiple instances of same class is present
 		//tearDown(); //Similar to Before class we are using AfterClass here
 		
 	}
