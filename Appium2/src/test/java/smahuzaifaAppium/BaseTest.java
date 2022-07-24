@@ -49,4 +49,15 @@ public class BaseTest {
 				 ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),
 						 "duration",2000));
 	}
+	public void scrollToEndAction()
+	{
+		 boolean canScrollMore;
+		 do 
+		 {
+			  canScrollMore = (Boolean) ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", 
+					 ImmutableMap.of("left", 100, "top", 100, "width", 200, "height", 200,
+					    "direction", "down", //Direction is mandatory
+					    "percent", 3.0));
+		 }while(canScrollMore);
+	}
 }
