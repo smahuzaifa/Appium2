@@ -35,18 +35,17 @@ public class LongPress extends BaseTest{
 			((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of(
     		"elementId", ((RemoteWebElement) element).getId()));
 		 */
-		 WebElement ele = driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
-		 longPressAction(ele);
+		 WebElement ele1 = driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']"));
+		 longPressAction(ele1);
 //		 ((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", 
-//				 ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),
+//				 ImmutableMap.of("elementId",((RemoteWebElement)ele1).getId(),
 //						 "duration",2000));
+		 //We have created a method longPressAction in base test that we will call whenever we have to perform longPress action in our code
 		 String menuText = driver.findElement(By.id("android:id/title")).getText();
 		 Assert.assertEquals(menuText, "Sample menu");
 		 System.out.println(menuText);
 		 Assert.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed());
 		 //This will be directly asserting if it is displayed
-		
-		 
 		 Thread.sleep(4000);
 		 
 		 
