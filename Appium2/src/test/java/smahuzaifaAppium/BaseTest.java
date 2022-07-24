@@ -4,8 +4,13 @@ package smahuzaifaAppium;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -37,5 +42,11 @@ public class BaseTest {
 	{
 		driver.quit();
 		//service.stop();
+	}
+	public void longPressAction(WebElement ele)
+	{
+		((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", 
+				 ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),
+						 "duration",2000));
 	}
 }
