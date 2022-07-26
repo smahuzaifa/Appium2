@@ -40,6 +40,6 @@ public class AppiumBasics extends BaseTest {
 		Thread.sleep(4000);
 		//Can be used when only class name is present and multiple instances of same class is present
 		//tearDown(); //Similar to Before class we are using AfterClass here
-		
+		 
 	}
 }

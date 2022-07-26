@@ -2,24 +2,58 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-24T21:46:57 IST" name="Default suite" finished-at="2022-07-24T21:47:13 IST" duration-ms="16520">
+  <suite started-at="2022-07-26T18:46:22 IST" name="Default suite" finished-at="2022-07-26T18:47:01 IST" duration-ms="38268">
     <groups>
     </groups>
-    <test started-at="2022-07-24T21:46:57 IST" name="Default test" finished-at="2022-07-24T21:47:13 IST" duration-ms="16520">
-      <class name="smahuzaifaAppium.LongPress">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.LongPress@4a22f9e2]" started-at="2022-07-24T21:46:57 IST" name="ConfigureAppium" finished-at="2022-07-24T21:47:03 IST" duration-ms="6464" status="PASS">
+    <test started-at="2022-07-26T18:46:22 IST" name="Default test" finished-at="2022-07-26T18:47:01 IST" duration-ms="38268">
+      <class name="smahuzaifaAppium.ScrollAction">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.ScrollAction@3c419631]" started-at="2022-07-26T18:46:22 IST" name="ConfigureAppium" finished-at="2022-07-26T18:46:37 IST" duration-ms="14691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="LongPressGesture()[pri:0, instance:smahuzaifaAppium.LongPress@4a22f9e2]" started-at="2022-07-24T21:47:03 IST" name="LongPressGesture" finished-at="2022-07-24T21:47:13 IST" duration-ms="9644" status="PASS">
+        <test-method signature="ScrollDemo()[pri:0, instance:smahuzaifaAppium.ScrollAction@3c419631]" started-at="2022-07-26T18:46:37 IST" name="ScrollDemo" finished-at="2022-07-26T18:47:00 IST" duration-ms="23199" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LongPressGesture -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.LongPress@4a22f9e2]" started-at="2022-07-24T21:47:13 IST" name="tearDown" finished-at="2022-07-24T21:47:13 IST" duration-ms="376" status="PASS">
+        </test-method> <!-- ScrollDemo -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.ScrollAction@3c419631]" started-at="2022-07-26T18:47:00 IST" name="tearDown" finished-at="2022-07-26T18:47:01 IST" duration-ms="335" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.service.local.AppiumDriverLocalService.stop()" because "this.service" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.service.local.AppiumDriverLocalService.stop()" because "this.service" is null
+at smahuzaifaAppium.BaseTest.tearDown(BaseTest.java:44)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- smahuzaifaAppium.LongPress -->
+      </class> <!-- smahuzaifaAppium.ScrollAction -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
