@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="smahuzaifaAppium.ScrollAction">
+      <class name="smahuzaifaAppium.AppiumBasics">
         <methods>
-          <include name="ScrollDemo"/>
           <include name="ConfigureAppium"/>
+          <include name="WifiSettingName"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- smahuzaifaAppium.ScrollAction -->
+      </class> <!-- smahuzaifaAppium.AppiumBasics -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
