@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-31T13:51:12 IST" name="Default suite" finished-at="2022-07-31T13:51:30 IST" duration-ms="18872">
+  <suite started-at="2022-07-31T14:44:28 IST" name="Default suite" finished-at="2022-07-31T14:44:44 IST" duration-ms="15229">
     <groups>
     </groups>
-    <test started-at="2022-07-31T13:51:12 IST" name="Default test" finished-at="2022-07-31T13:51:30 IST" duration-ms="18872">
-      <class name="smahuzaifaAppium.MiscellaneousAppiumActions">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:51:12 IST" name="ConfigureAppium" finished-at="2022-07-31T13:51:17 IST" duration-ms="5666" status="PASS">
+    <test started-at="2022-07-31T14:44:28 IST" name="Default test" finished-at="2022-07-31T14:44:44 IST" duration-ms="15229">
+      <class name="smahuzaifaAppium.AppiumBasics">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.AppiumBasics@6cd28fa7]" started-at="2022-07-31T14:44:28 IST" name="ConfigureAppium" finished-at="2022-07-31T14:44:35 IST" duration-ms="6225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="Miscellaneous()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:51:17 IST" name="Miscellaneous" finished-at="2022-07-31T13:51:30 IST" duration-ms="12817" status="PASS">
+        <test-method signature="WifiSettingName()[pri:0, instance:smahuzaifaAppium.AppiumBasics@6cd28fa7]" started-at="2022-07-31T14:44:35 IST" name="WifiSettingName" finished-at="2022-07-31T14:44:43 IST" duration-ms="8627" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Miscellaneous -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:51:30 IST" name="tearDown" finished-at="2022-07-31T13:51:30 IST" duration-ms="336" status="PASS">
+        </test-method> <!-- WifiSettingName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.AppiumBasics@6cd28fa7]" started-at="2022-07-31T14:44:43 IST" name="tearDown" finished-at="2022-07-31T14:44:44 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- smahuzaifaAppium.MiscellaneousAppiumActions -->
+      </class> <!-- smahuzaifaAppium.AppiumBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
