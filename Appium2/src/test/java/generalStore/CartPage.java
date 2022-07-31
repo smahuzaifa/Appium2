@@ -1,10 +1,12 @@
 package generalStore;
 
 import java.util.List;
+import java.util.Set;
 
 //import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.support.ui.ExpectedConditions;
 //import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,6 +14,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class CartPage extends BasicTest {
 	@Test
@@ -55,7 +59,19 @@ public class CartPage extends BasicTest {
 		longPressAction(terms);
 		driver.findElement(By.id("android:id/button1")).click();
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnProceed")).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
+		
+		Set<String> context =driver.getContextHandles();
+		for(String contextName : context) {
+			System.out.println(contextName);
+		}
+//		NATIVE_APP
+//		WEBVIEW_com.androidsample.generalstore
+		driver.context("WEBVIEW_com.androidsample.generalstore");
+		driver.findElement(By.name("q")).sendKeys("ABCD");
+		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		driver.pressKey(new KeyEvent(AndroidKey.BACK)); //BackButton
+		driver.context("NATIVE_APP"); //Back to native app
 	}
 
 }

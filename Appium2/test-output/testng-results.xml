@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-31T18:56:50 IST" name="Default suite" finished-at="2022-07-31T18:57:15 IST" duration-ms="24826">
+  <suite started-at="2022-07-31T20:00:02 IST" name="Default suite" finished-at="2022-07-31T20:00:31 IST" duration-ms="29252">
     <groups>
     </groups>
-    <test started-at="2022-07-31T18:56:50 IST" name="Default test" finished-at="2022-07-31T18:57:15 IST" duration-ms="24826">
-      <class name="generalStore.ScrollInProductList">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:generalStore.ScrollInProductList@6cd28fa7]" started-at="2022-07-31T18:56:50 IST" name="ConfigureAppium" finished-at="2022-07-31T18:57:00 IST" duration-ms="10223" status="PASS">
+    <test started-at="2022-07-31T20:00:02 IST" name="Default test" finished-at="2022-07-31T20:00:31 IST" duration-ms="29252">
+      <class name="generalStore.CartPage">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:02 IST" name="ConfigureAppium" finished-at="2022-07-31T20:00:11 IST" duration-ms="8981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="scrollInList()[pri:0, instance:generalStore.ScrollInProductList@6cd28fa7]" started-at="2022-07-31T18:57:00 IST" name="scrollInList" finished-at="2022-07-31T18:57:15 IST" duration-ms="14268" status="PASS">
+        <test-method signature="cartPage()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:11 IST" name="cartPage" finished-at="2022-07-31T20:00:31 IST" duration-ms="19929" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollInList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:generalStore.ScrollInProductList@6cd28fa7]" started-at="2022-07-31T18:57:15 IST" name="tearDown" finished-at="2022-07-31T18:57:15 IST" duration-ms="288" status="PASS">
+        </test-method> <!-- cartPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:31 IST" name="tearDown" finished-at="2022-07-31T20:00:31 IST" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- generalStore.ScrollInProductList -->
+      </class> <!-- generalStore.CartPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

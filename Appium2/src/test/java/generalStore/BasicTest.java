@@ -30,6 +30,8 @@ public class BasicTest {
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel 5");
 		options.setApp("//Users//smahuzaifa//git//Appium2//Appium2//General-Store.apk");
+		//options.setChromedriverExecutable("Path"); 
+		//Use this if webview automation is failing due to chrome driver
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		Thread.sleep(3000);
