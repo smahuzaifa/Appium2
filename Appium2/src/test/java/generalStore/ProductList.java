@@ -10,9 +10,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 
-public class ScrollInProductList extends BasicTest {
+public class ProductList extends BasicTest {
 	@Test
-	public void scrollInList() throws InterruptedException {
+	public void productList() throws InterruptedException {
 		driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("ABCD");
 		driver.hideKeyboard();
 		driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
