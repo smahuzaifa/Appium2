@@ -2,6 +2,7 @@ package generalStore;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+//import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -19,7 +20,7 @@ public class BasicTest {
 	//public AppiumDriverLocalService service;
 	
 	@BeforeClass
-	public void ConfigureAppium() throws MalformedURLException
+	public void ConfigureAppium() throws MalformedURLException, InterruptedException
 	{
 //		AppiumDriverLocalService service = new AppiumServiceBuilder()
 //				.withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
@@ -28,9 +29,10 @@ public class BasicTest {
 		
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel 5");
-		options.setApp("//Users//smahuzaifa//git//Appium2//Appium2//ApiDemos-debug.apk");
+		options.setApp("//Users//smahuzaifa//git//Appium2//Appium2//General-Store.apk");
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
-		//Thread.sleep(3000);
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(3000);
 	}
 	
 	@AfterClass
