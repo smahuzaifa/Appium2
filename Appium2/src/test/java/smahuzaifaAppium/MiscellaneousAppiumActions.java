@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 //import io.appium.java_client.android.AndroidDriver;
@@ -23,14 +24,11 @@ public class MiscellaneousAppiumActions extends BaseTest {
 	@Test
 	public void Miscellaneous() throws MalformedURLException, InterruptedException
 	{
-		//ConfigureAppium();
-		//Since @BeforeClass is mentioned in the parent class we do not have to call the method
-			//as TestNG will automatically run BeforeClass method first
-		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
-		/*
-		 * AppiumBy should be used for accessibility id and androiUIAutomator
-		 */
-		driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='3. Preference dependencies']")).click();
+		Activity activity = new Activity("io.appium.android.apis","io.appium.android.apis.preference.PreferenceDependencies");
+		//To directly open a screen
+		//adb shell dumpsys window | grep -E 'mCurrentFocus'
+		//App package,App Activity
+		driver.startActivity(activity);
 		driver.findElement(AppiumBy.id("android:id/checkbox")).click();
 		
 		//To change screen orientation
