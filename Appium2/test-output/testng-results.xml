@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-31T13:08:52 IST" name="Default suite" finished-at="2022-07-31T13:09:02 IST" duration-ms="10289">
+  <suite started-at="2022-07-31T13:29:51 IST" name="Default suite" finished-at="2022-07-31T13:30:08 IST" duration-ms="17106">
     <groups>
     </groups>
-    <test started-at="2022-07-31T13:08:52 IST" name="Default test" finished-at="2022-07-31T13:09:02 IST" duration-ms="10289">
-      <class name="smahuzaifaAppium.SwipeActions">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.SwipeActions@7e7be63f]" started-at="2022-07-31T13:08:52 IST" name="ConfigureAppium" finished-at="2022-07-31T13:08:58 IST" duration-ms="5751" status="PASS">
+    <test started-at="2022-07-31T13:29:51 IST" name="Default test" finished-at="2022-07-31T13:30:08 IST" duration-ms="17106">
+      <class name="smahuzaifaAppium.MiscellaneousAppiumActions">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:29:51 IST" name="ConfigureAppium" finished-at="2022-07-31T13:29:57 IST" duration-ms="5831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="SwipeAction()[pri:0, instance:smahuzaifaAppium.SwipeActions@7e7be63f]" started-at="2022-07-31T13:08:58 IST" name="SwipeAction" finished-at="2022-07-31T13:09:02 IST" duration-ms="4241" status="PASS">
+        <test-method signature="Miscellaneous()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:29:57 IST" name="Miscellaneous" finished-at="2022-07-31T13:30:07 IST" duration-ms="10796" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SwipeAction -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.SwipeActions@7e7be63f]" started-at="2022-07-31T13:09:02 IST" name="tearDown" finished-at="2022-07-31T13:09:02 IST" duration-ms="251" status="PASS">
+        </test-method> <!-- Miscellaneous -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:smahuzaifaAppium.MiscellaneousAppiumActions@6cd28fa7]" started-at="2022-07-31T13:30:07 IST" name="tearDown" finished-at="2022-07-31T13:30:08 IST" duration-ms="412" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- smahuzaifaAppium.SwipeActions -->
+      </class> <!-- smahuzaifaAppium.MiscellaneousAppiumActions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
