@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="generalStore.FillForm">
+      <class name="crossPlatform.MobileBrowserTest">
         <methods>
           <include name="ConfigureAppium"/>
-          <include name="fillForm"/>
+          <include name="BrowserTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- generalStore.FillForm -->
+      </class> <!-- crossPlatform.MobileBrowserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -27,7 +27,7 @@ public class CartPage extends BasicTest {
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"))"));
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Argentina']")).click();
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
-		
+		Thread.sleep(3000);
 		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click();
 		driver.findElements(By.xpath("//android.widget.TextView[@text='ADD TO CART']")).get(0).click(); //Older one becomes added to cart
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
