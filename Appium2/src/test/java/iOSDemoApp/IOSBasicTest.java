@@ -15,6 +15,8 @@ public class IOSBasicTest extends BaseTest {
 		//We can also use BEGINSWITH for case sensitive BEGINSWITH[c] and similarly ENDSWITH
 		driver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"OK\"]")).click();
 		driver.findElement(AppiumBy.accessibilityId("Confirm / Cancel")).click();
+		String text = driver.findElement(AppiumBy.iOSNsPredicateString("name BEGINSWITH[c] 'A message'")).getText();
+		System.out.println(text);
 		driver.findElement(AppiumBy.iOSClassChain("**/XCUIElementTypeButton[`label == \"Confirm\"`]")).click();
 		
 		
