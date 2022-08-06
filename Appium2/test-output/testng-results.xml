@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-31T20:00:02 IST" name="Default suite" finished-at="2022-07-31T20:00:31 IST" duration-ms="29252">
+  <suite started-at="2022-08-06T21:10:22 IST" name="Default suite" finished-at="2022-08-06T21:10:36 IST" duration-ms="13474">
     <groups>
     </groups>
-    <test started-at="2022-07-31T20:00:02 IST" name="Default test" finished-at="2022-07-31T20:00:31 IST" duration-ms="29252">
-      <class name="generalStore.CartPage">
-        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:02 IST" name="ConfigureAppium" finished-at="2022-07-31T20:00:11 IST" duration-ms="8981" status="PASS">
+    <test started-at="2022-08-06T21:10:22 IST" name="Default test" finished-at="2022-08-06T21:10:36 IST" duration-ms="13474">
+      <class name="iOSDemoApp.IOSBasicTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:iOSDemoApp.IOSBasicTest@47987356]" started-at="2022-08-06T21:10:22 IST" name="ConfigureAppium" finished-at="2022-08-06T21:10:31 IST" duration-ms="8096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ConfigureAppium -->
-        <test-method signature="cartPage()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:11 IST" name="cartPage" finished-at="2022-07-31T20:00:31 IST" duration-ms="19929" status="PASS">
+        <test-method signature="iOSBasicTest()[pri:0, instance:iOSDemoApp.IOSBasicTest@47987356]" started-at="2022-08-06T21:10:31 IST" name="iOSBasicTest" finished-at="2022-08-06T21:10:35 IST" duration-ms="4184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cartPage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:generalStore.CartPage@614ca7df]" started-at="2022-07-31T20:00:31 IST" name="tearDown" finished-at="2022-07-31T20:00:31 IST" duration-ms="267" status="PASS">
+        </test-method> <!-- iOSBasicTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:iOSDemoApp.IOSBasicTest@47987356]" started-at="2022-08-06T21:10:35 IST" name="tearDown" finished-at="2022-08-06T21:10:36 IST" duration-ms="1091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- generalStore.CartPage -->
+      </class> <!-- iOSDemoApp.IOSBasicTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
