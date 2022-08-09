@@ -4,7 +4,11 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 //import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import io.appium.java_client.ios.IOSDriver;
@@ -28,11 +32,17 @@ public AppiumDriverLocalService service;
 		XCUITestOptions options = new XCUITestOptions();
 		options.setDeviceName("iPhone 13 Pro Max");
 		options.setApp("Users/smahuzaifa/Downloads/Appium File and Folders/IOS Apps/UIKitCatalog.app");
-		options.setPlatformVersion("15.2");
+		options.setPlatformVersion("15.5");
 		//Appium -> Web driver Agent -> iOS Apps
 		//options.setWdaLaunchTimeout(Duration.ofSeconds(20));
 		driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
 		Thread.sleep(1000);
+	}
+	public void touchAndHold(WebElement ele, int duration) {
+		Map <String,Object> params = new HashMap<>();
+		params.put("element", ((RemoteWebElement)ele).getId());
+		params.put("duration", duration);
+		driver.executeScript("mobile:touchAndHold", params); 
 	}
 	
 	@AfterClass
